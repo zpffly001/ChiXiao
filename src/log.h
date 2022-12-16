@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef __CP_LOG_H__
-#define __CP_LOG_H__
+#ifndef __LOG_H__
+#define __LOG_H__
 #include <string.h>
 #include <stdint.h>
 #include <memory>
@@ -68,6 +68,32 @@ public:
      */
     static LogLevel::Level FromString(const std::string& str);
 };
+
+
+/*
+****************************************************************************************
+ * 日志器 Logger
+****************************************************************************************
+*/
+class Logger : public std::enable_shared_from_this<Logger>
+{
+private:
+    /* data */
+public:
+    typedef std::shared_ptr<Logger> ptr;
+    // typedef Sniplock MutexType;
+    Logger(/* args */);
+    ~Logger();
+};
+
+Logger::Logger(/* args */)
+{
+}
+
+Logger::~Logger()
+{
+}
+
 
 
 /**
