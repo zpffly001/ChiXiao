@@ -1,6 +1,6 @@
 /**
- * @file cp_log.h
- * @author zpf (you@domain.com)
+ * @file log.h 日志模块
+ * @author zpf (zpf001001@gmail.com)
  * @brief 日志模块
  * @version 0.1
  * @date 2022-12-14
@@ -22,7 +22,7 @@
 #include <map>
 // #include "util.h"
 // #include "singleton.h"
-// #include "thread.h"
+#include "thread.h"
 
 
 
@@ -81,7 +81,7 @@ private:
     /* data */
 public:
     typedef std::shared_ptr<Logger> ptr;
-    // typedef Sniplock MutexType;
+    // typedef Spinlock MutexType;
     Logger(/* args */);
     ~Logger();
 };

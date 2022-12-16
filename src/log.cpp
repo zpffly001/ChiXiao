@@ -1,6 +1,6 @@
 /**
- * @file cp_log.cpp
- * @author zpf (you@domain.com)
+ * @file log.cpp
+ * @author zpf (zpf001001@gmail.com)
  * @brief 日志模块
  * @version 0.1
  * @date 2022-12-14
