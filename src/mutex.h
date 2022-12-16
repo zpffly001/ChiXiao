@@ -104,7 +104,7 @@ struct ScopedLockImpl
 
 
 
-}
+} // namespace ChiXiao
 
 
 #endif
